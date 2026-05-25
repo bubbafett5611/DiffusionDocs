@@ -39,6 +39,6 @@ When asking for help or comparing results, include:
 - exact error text for crashes or loading problems
 
 ::: warning Avoid Random Setting Churn
-Changing ten settings can accidentally improve one image while making the workflow harder to understand. Public-ready workflows should be explainable, repeatable, and diagnosable.
+Changing ten settings can accidentally improve one image while making the workflow harder to understand. Reliable workflows are explainable, repeatable, and diagnosable.
 :::
 

@@ -51,5 +51,5 @@ Use weighting like seasoning: small changes, tested against a fixed seed.
 5. Prefer workflow controls when the issue is layout, pose, or exact object count.
 
 ::: warning Syntax Depends On The Tool
-Before writing a guide that uses exact weighting syntax, scope it to the UI or backend that supports that syntax.
+Exact weighting syntax only applies when the UI or backend supports that syntax. Check the tool's prompt parser before copying examples between workflows.
 :::

@@ -54,7 +54,7 @@ For models you use often, keep a small record:
 - compatible LoRAs or embeddings
 - licensing/source notes
 
-This turns model learning into documentation instead of guesswork.
+This turns model learning into a repeatable reference instead of guesswork.
 
 ## Hosted Tools
 
