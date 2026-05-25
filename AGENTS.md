@@ -118,6 +118,26 @@ Avoid mixing technically distinct terms casually.
 - Keep frontmatter minimal and purposeful.
 - Update VitePress navigation/sidebar configuration when adding pages that should be discoverable.
 
+## Navigation and Sidebar Structure
+
+The VitePress site uses top-level navbar dropdowns and path-specific sidebars rather than one global sidebar.
+
+Navbar groups:
+
+- `Guides`: reader-facing tutorials, walkthroughs, orientation pages, and workflow guides
+- `Reference`: lookup-oriented material such as tools, model notes, compatibility pages, glossary entries, and other structured references
+
+Sidebar rules:
+
+- Use a `sidebar` object keyed by path prefixes in `docs/.vitepress/config.mts`.
+- Add guide sections under their own path, such as `/getting-started/`, `/workflows/`, `/prompting/`, or `/loras/`.
+- Add reference sections under their own path, such as `/tools/`, `/models/`, `/glossary/`, or `/troubleshooting/`.
+- Keep sidebar section titles specific to the section, for example `Getting Started` rather than repeating the navbar group name `Guides`.
+- Prefer `collapsed: true` for sidebar groups unless the section is very small or should always be expanded.
+- When adding a discoverable page, update both the relevant navbar dropdown, if it introduces a new section, and the matching path-specific sidebar.
+
+Do not return to a single global sidebar as the site grows. Separate sidebars keep guide pages and reference pages from crowding each other.
+
 ## Page Presentation Conventions
 
 Use VitePress features to make documentation easier to scan from the first draft.
