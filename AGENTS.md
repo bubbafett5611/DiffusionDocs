@@ -13,13 +13,14 @@ This is not a hype site, prompt marketplace, SEO content farm, or tool-specific 
 - Documentation content lives under `docs/`.
 - VitePress configuration lives in `docs/.vitepress/config.mts`.
 - Theme customizations live in `docs/.vitepress/theme/`.
-- Planned top-level documentation areas include:
-  - `getting-started/`
+- Planned guide areas live under `docs/guides/`, including:
+  - `guides/getting-started/`
+  - `guides/workflows/`
+  - `guides/prompting/`
+  - `guides/loras/`
+- Planned reference areas live under their own top-level folders, including:
   - `concepts/`
   - `models/`
-  - `workflows/`
-  - `prompting/`
-  - `loras/`
   - `troubleshooting/`
   - `tools/`
   - `theory/`
@@ -130,7 +131,7 @@ Navbar groups:
 Sidebar rules:
 
 - Use a `sidebar` object keyed by path prefixes in `docs/.vitepress/config.mts`.
-- Add guide sections under their own path, such as `/getting-started/`, `/workflows/`, `/prompting/`, or `/loras/`.
+- Add guide sections under `/guides/`, such as `/guides/getting-started/`, `/guides/workflows/`, `/guides/prompting/`, or `/guides/loras/`.
 - Add reference sections under their own path, such as `/tools/`, `/models/`, `/glossary/`, or `/troubleshooting/`.
 - Keep sidebar section titles specific to the section, for example `Getting Started` rather than repeating the navbar group name `Guides`.
 - Prefer `collapsed: true` for sidebar groups unless the section is very small or should always be expanded.
@@ -165,12 +166,12 @@ When a comparison needs detail, use a compact table first, then add short subsec
 
 Choose the section by reader intent:
 
-- `getting-started/`: first concepts, setup paths, and orientation
+- `guides/getting-started/`: first concepts, setup paths, and orientation
+- `guides/workflows/`: practical generation pipelines and repeatable processes
+- `guides/prompting/`: prompting principles, conditioning, and prompt structure
+- `guides/loras/`: LoRAs, embeddings, adapters, usage, and troubleshooting
 - `concepts/`: core diffusion concepts explained clearly
 - `models/`: model families, formats, compatibility, and ecosystem notes
-- `workflows/`: practical generation pipelines and repeatable processes
-- `prompting/`: prompting principles, conditioning, and prompt structure
-- `loras/`: LoRAs, embeddings, adapters, usage, and troubleshooting
 - `troubleshooting/`: symptoms, likely causes, and fixes
 - `tools/`: tool-specific notes when tool behavior matters
 - `theory/`: deeper technical explanations

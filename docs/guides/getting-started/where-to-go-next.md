@@ -8,7 +8,7 @@ The next page to read depends on what you are trying to improve: tool choice, pr
 
 ## If You Need To Choose A Tool
 
-Go to [Generation Tools](../tools/generation-tools.md) when you want to compare local interfaces, package managers, and hosted generation websites.
+Go to [Generation Tools](../../tools/generation-tools.md) when you want to compare local interfaces, package managers, and hosted generation websites.
 
 Start with the kind of workflow you want, not the longest feature list. A simple hosted generator may be enough for prompt practice, while local tools make more sense when you need custom models, LoRAs, privacy, or repeatable workflows.
 
