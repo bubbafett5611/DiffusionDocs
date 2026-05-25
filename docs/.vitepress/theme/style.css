@@ -155,3 +155,25 @@
   line-height: 1.4;
   text-align: center;
 }
+
+/**
+ * Page: Booru Tag Browser
+ * -------------------------------------------------------------------------- */
+
+.booru-tag-browser-page .VPDoc {
+  padding: 24px 24px 32px;
+}
+
+.Layout.booru-tag-browser-page .VPDoc .container,
+.Layout.booru-tag-browser-page .VPDoc .content,
+.Layout.booru-tag-browser-page .VPDoc .content-container,
+.Layout.booru-tag-browser-page .VPDoc .main,
+.Layout.booru-tag-browser-page .VPDoc .vp-doc {
+  max-width: none !important;
+  width: 100%;
+}
+
+.booru-tag-browser-page .VPDoc h1 {
+  margin: 0 auto 16px;
+  max-width: 1440px;
+}

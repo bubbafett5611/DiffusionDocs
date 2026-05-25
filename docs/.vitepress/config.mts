@@ -141,6 +141,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Booru Tags', link: '/booru-tag-browser' },
       {
         text: 'Guides',
         items: [
