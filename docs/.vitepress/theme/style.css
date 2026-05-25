@@ -160,8 +160,15 @@
  * Page: Booru Tag Browser
  * -------------------------------------------------------------------------- */
 
+.Layout.booru-tag-browser-page {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .booru-tag-browser-page .VPDoc {
-  padding: 24px 24px 32px;
+  height: calc(100vh - var(--vp-nav-height, 64px));
+  overflow: hidden;
+  padding: 16px 24px;
 }
 
 .Layout.booru-tag-browser-page .VPDoc .container,
@@ -169,11 +176,13 @@
 .Layout.booru-tag-browser-page .VPDoc .content-container,
 .Layout.booru-tag-browser-page .VPDoc .main,
 .Layout.booru-tag-browser-page .VPDoc .vp-doc {
+  height: 100%;
   max-width: none !important;
+  min-height: 0;
   width: 100%;
 }
 
 .booru-tag-browser-page .VPDoc h1 {
-  margin: 0 auto 16px;
+  margin: 0 auto 12px;
   max-width: 1440px;
 }

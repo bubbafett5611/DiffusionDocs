@@ -340,6 +340,9 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .booru-browser {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--vp-nav-height, 64px) - 92px);
   margin: 0 auto;
   max-width: 1440px;
   border: 1px solid var(--vp-c-divider);
@@ -481,15 +484,17 @@ onBeforeUnmount(() => {
 
 .booru-browser__body {
   display: grid;
+  flex: 1;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 34%);
   gap: 16px;
+  min-height: 0;
 }
 
 .booru-browser__results {
   display: grid;
   align-content: start;
-  max-height: calc(100vh - 360px);
-  min-height: 420px;
+  max-height: none;
+  min-height: 0;
   overflow: auto;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
@@ -529,6 +534,7 @@ onBeforeUnmount(() => {
 
 .booru-browser__details {
   min-width: 0;
+  overflow: auto;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   padding: 16px;
@@ -588,6 +594,10 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 860px) {
+  .booru-browser {
+    height: calc(100vh - var(--vp-nav-height, 64px) - 84px);
+  }
+
   .booru-browser__header,
   .booru-browser__body {
     grid-template-columns: 1fr;
@@ -616,7 +626,6 @@ onBeforeUnmount(() => {
   }
 
   .booru-browser__results {
-    max-height: none;
     min-height: 320px;
   }
 }
