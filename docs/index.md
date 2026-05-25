@@ -13,11 +13,11 @@ hero:
 
     - theme: alt
       text: Generation Tools
-      link: /tools/generation-tools
+      link: /reference/tools/generation-tools
 
     - theme: alt
       text: Browse Concepts
-      link: /concepts/
+      link: /reference/concepts/
 
 features:
   - title: Open Source

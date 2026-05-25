@@ -34,5 +34,5 @@ flowchart LR
 - sampler or scheduler only after you understand the baseline
 
 ::: info Related Concepts
-See [Conditioning](../../concepts/conditioning.md), [Denoising](../../concepts/denoising.md), and [Seeds And Reproducibility](../../concepts/seeds-and-reproducibility.md).
+See [Conditioning](../../reference/concepts/conditioning.md), [Denoising](../../reference/concepts/denoising.md), and [Seeds And Reproducibility](../../reference/concepts/seeds-and-reproducibility.md).
 :::

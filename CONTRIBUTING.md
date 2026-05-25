@@ -37,9 +37,9 @@ Do not use wide tables with long prose in cells. Put detail in paragraphs or col
 
 ## Structure
 
-Guides live under `docs/guides/`. Reference pages live under their own top-level folders such as `docs/tools/`, `docs/models/`, `docs/concepts/`, `docs/troubleshooting/`, `docs/theory/`, and `docs/glossary/`.
+Guides live under `docs/guides/`. Reference pages live under `docs/reference/`, grouped by section, such as `docs/reference/tools/`, `docs/reference/models/`, `docs/reference/concepts/`, `docs/reference/troubleshooting/`, `docs/reference/theory/`, and `docs/reference/glossary/`.
 
-When adding a discoverable page, update `docs/.vitepress/config.mts` so the navbar and relevant path-specific sidebar stay accurate.
+When adding a discoverable page, update `docs/.vitepress/config.mts` so the navbar and shared sidebar stay accurate.
 
 ## Verification
 
@@ -48,4 +48,3 @@ Run the build before finishing structural, navigation, or Markdown syntax change
 ```bash
 npm run docs:build
 ```
-

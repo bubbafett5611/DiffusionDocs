@@ -18,13 +18,13 @@ This is not a hype site, prompt marketplace, SEO content farm, or tool-specific 
   - `guides/workflows/`
   - `guides/prompting/`
   - `guides/loras/`
-- Planned reference areas live under their own top-level folders, including:
-  - `concepts/`
-  - `models/`
-  - `troubleshooting/`
-  - `tools/`
-  - `theory/`
-  - `glossary/`
+- Reference areas live under `docs/reference/`, including:
+  - `reference/concepts/`
+  - `reference/models/`
+  - `reference/troubleshooting/`
+  - `reference/tools/`
+  - `reference/theory/`
+  - `reference/glossary/`
 
 Do not commit generated VitePress cache/build output unless the repository explicitly starts tracking it.
 
@@ -153,9 +153,9 @@ Sidebar rules:
 
 - Use a `sidebar` object keyed by path prefixes in `docs/.vitepress/config.mts`.
 - Add guide sections under `/guides/`, such as `/guides/getting-started/`, `/guides/workflows/`, `/guides/prompting/`, or `/guides/loras/`.
-- Add reference sections under their own path, such as `/tools/`, `/models/`, `/glossary/`, or `/troubleshooting/`.
+- Add reference sections under `/reference/`, such as `/reference/tools/`, `/reference/models/`, `/reference/glossary/`, or `/reference/troubleshooting/`.
 - Keep the `/guides/` path mapped to the shared `guidesSidebar`.
-- Keep reference paths such as `/concepts/`, `/models/`, `/tools/`, `/troubleshooting/`, `/theory/`, and `/glossary/` mapped to the shared `referenceSidebar`.
+- Keep the `/reference/` path mapped to the shared `referenceSidebar`.
 - Use collapsible sidebar groups to show sibling sections without overwhelming the current page.
 - Keep sidebar section titles specific to the section, for example `Getting Started` or `Concepts` rather than repeating navbar group names.
 - Prefer `collapsed: true` for sidebar groups unless the section is very small or should always be expanded.
@@ -194,12 +194,12 @@ Choose the section by reader intent:
 - `guides/workflows/`: practical generation pipelines and repeatable processes
 - `guides/prompting/`: prompting principles, conditioning, and prompt structure
 - `guides/loras/`: LoRAs, embeddings, adapters, usage, and troubleshooting
-- `concepts/`: core diffusion concepts explained clearly
-- `models/`: model families, formats, compatibility, and ecosystem notes
-- `troubleshooting/`: symptoms, likely causes, and fixes
-- `tools/`: tool-specific notes when tool behavior matters
-- `theory/`: deeper technical explanations
-- `glossary/`: concise definitions with links to fuller explanations
+- `reference/concepts/`: core diffusion concepts explained clearly
+- `reference/models/`: model families, formats, compatibility, and ecosystem notes
+- `reference/troubleshooting/`: symptoms, likely causes, and fixes
+- `reference/tools/`: tool-specific notes when tool behavior matters
+- `reference/theory/`: deeper technical explanations
+- `reference/glossary/`: concise definitions with links to fuller explanations
 
 If a topic fits multiple areas, put the main explanation where the reader would most likely look first, then link from related pages.
 
