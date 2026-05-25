@@ -142,7 +142,7 @@ Avoid mixing technically distinct terms casually.
 
 ## Navigation and Sidebar Structure
 
-The VitePress site uses top-level navbar dropdowns and path-specific sidebars rather than one global sidebar.
+The VitePress site uses top-level navbar dropdowns with two broad sidebar experiences: one shared Guides sidebar and one shared Reference sidebar.
 
 Navbar groups:
 
@@ -154,11 +154,14 @@ Sidebar rules:
 - Use a `sidebar` object keyed by path prefixes in `docs/.vitepress/config.mts`.
 - Add guide sections under `/guides/`, such as `/guides/getting-started/`, `/guides/workflows/`, `/guides/prompting/`, or `/guides/loras/`.
 - Add reference sections under their own path, such as `/tools/`, `/models/`, `/glossary/`, or `/troubleshooting/`.
-- Keep sidebar section titles specific to the section, for example `Getting Started` rather than repeating the navbar group name `Guides`.
+- Keep the `/guides/` path mapped to the shared `guidesSidebar`.
+- Keep reference paths such as `/concepts/`, `/models/`, `/tools/`, `/troubleshooting/`, `/theory/`, and `/glossary/` mapped to the shared `referenceSidebar`.
+- Use collapsible sidebar groups to show sibling sections without overwhelming the current page.
+- Keep sidebar section titles specific to the section, for example `Getting Started` or `Concepts` rather than repeating navbar group names.
 - Prefer `collapsed: true` for sidebar groups unless the section is very small or should always be expanded.
-- When adding a discoverable page, update both the relevant navbar dropdown, if it introduces a new section, and the matching path-specific sidebar.
+- When adding a discoverable page, update both the relevant navbar dropdown, if it introduces a new section, and the matching shared sidebar.
 
-Do not return to a single global sidebar as the site grows. Separate sidebars keep guide pages and reference pages from crowding each other.
+Do not split every reference section into a separate isolated sidebar unless the Reference sidebar becomes genuinely too large to scan. The current UX goal is to keep sibling reference areas discoverable through collapsible groups.
 
 ## Page Presentation Conventions
 
