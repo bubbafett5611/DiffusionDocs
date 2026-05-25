@@ -15,17 +15,19 @@ This section should focus on workflows a reader can actually follow: text-to-ima
 
 ## Basic Pipeline
 
-```text
-idea or input
-  -> model choice
-  -> conditioning
-  -> sampling
-  -> review
-  -> edit or refine
-  -> save output and settings
+```mermaid
+flowchart TD
+  A["Idea or input"] --> B["Choose model"]
+  B --> C["Add conditioning"]
+  C --> D["Sample image"]
+  D --> E["Review result"]
+  E --> F{"Needs changes?"}
+  F -->|"Yes"| G["Edit or refine"]
+  G --> C
+  F -->|"No"| H["Save output and settings"]
 ```
+<!-- diagram id="basic-workflow-pipeline" caption="Basic diffusion workflow pipeline" -->
 
 ::: warning Change One Major Variable At A Time
 If you change the prompt, model, LoRAs, sampler, resolution, and seed all at once, you may get a better image but you will not know why.
 :::
-

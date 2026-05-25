@@ -8,14 +8,14 @@ The model is not drawing the final image in one pass. It repeatedly predicts how
 
 ## Simplified Process
 
-```text
-noisy sample at step t
-  -> model predicts denoising direction
-  -> sampler updates sample
-  -> next, less noisy sample
+```mermaid
+flowchart LR
+  A["Noisy sample at step t"] --> B["Model predicts denoising direction"]
+  B --> C["Sampler updates sample"]
+  C --> D["Next, less noisy sample"]
 ```
+<!-- diagram id="theory-denoising-step" caption="One denoising update" -->
 
 ## Why This Matters
 
 Settings such as steps, sampler, scheduler, guidance, and seed all affect this repeated process. Small changes can compound over many steps.
-

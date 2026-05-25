@@ -8,17 +8,17 @@ Diffusion generation does not create the final image in one step. It starts nois
 
 ## Denoising Loop
 
-```text
-random noise
-  -> denoise step
-  -> denoise step
-  -> denoise step
-  -> decoded image
+```mermaid
+flowchart LR
+  A["Random noise"] --> B["Denoise step"]
+  B --> C["Denoise step"]
+  C --> D["Denoise step"]
+  D --> E["Decoded image"]
 ```
+<!-- diagram id="denoising-loop" caption="Simplified denoising loop" -->
 
 The sampler and scheduler decide how this path is taken. The model predicts what changes should move the noisy sample toward the conditioned result.
 
 ## Why Steps Matter
 
 Too few steps can leave weak structure or rough detail. Too many steps can waste time or shift the image in unwanted ways. Useful ranges depend on the model family, sampler, scheduler, and workflow.
-

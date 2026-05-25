@@ -8,13 +8,14 @@ Use text-to-image to learn how a model responds before adding image references, 
 
 ## Basic Flow
 
-```text
-prompt
-  -> text conditioning
-  -> model denoising
-  -> decoded image
-  -> review and iterate
+```mermaid
+flowchart LR
+  A["Prompt"] --> B["Text conditioning"]
+  B --> C["Model denoising"]
+  C --> D["Decoded image"]
+  D --> E["Review and iterate"]
 ```
+<!-- diagram id="text-to-image-flow" caption="Basic text-to-image workflow" -->
 
 ## Practical Steps
 
@@ -35,4 +36,3 @@ prompt
 ::: info Related Concepts
 See [Conditioning](../../concepts/conditioning.md), [Denoising](../../concepts/denoising.md), and [Seeds And Reproducibility](../../concepts/seeds-and-reproducibility.md).
 :::
-

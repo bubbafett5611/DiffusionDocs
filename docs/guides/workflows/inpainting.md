@@ -8,13 +8,14 @@ Use inpainting for local fixes: hands, faces, objects, clothing, backgrounds, te
 
 ## Basic Flow
 
-```text
-image
-  -> mask problem area
-  -> prompt the desired replacement
-  -> generate candidates
-  -> adjust mask or strength
+```mermaid
+flowchart LR
+  A["Image"] --> B["Mask problem area"]
+  B --> C["Prompt replacement"]
+  C --> D["Generate candidates"]
+  D --> E["Adjust mask or strength"]
 ```
+<!-- diagram id="inpainting-flow" caption="Basic inpainting workflow" -->
 
 ## Good Masks
 
@@ -31,4 +32,3 @@ Good masks usually include the full problem area plus a little surrounding conte
 ::: warning Keep Expectations Local
 Inpainting is best for localized changes. If the whole composition is wrong, text-to-image or image-to-image is often a better starting point.
 :::
-

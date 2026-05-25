@@ -1,10 +1,26 @@
 import { defineConfig } from 'vitepress'
+import { createBuildTimeDiagramsPlugin } from 'vitepress-plugin-diagrams'
 
 // https://vitepress.dev/reference/site-config
+const base = '/DiffusionDocs/'
+
+const { configureMarkdown, vitePlugin } = createBuildTimeDiagramsPlugin({
+  diagramsDir: 'docs/public/diagrams',
+  publicPath: `${base}diagrams`,
+  diagramsDistDir: 'diagrams',
+  enableFileImports: false
+})
+
 export default defineConfig({
   title: "Diffusion Docs",
   description: "Technically grounded workflows, troubleshooting, and reference material for modern diffusion tools.",
-  base: '/DiffusionDocs/',
+  base,
+  markdown: {
+    config: (md) => configureMarkdown(md)
+  },
+  vite: {
+    plugins: [vitePlugin()]
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

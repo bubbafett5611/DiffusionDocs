@@ -8,12 +8,13 @@ Conditioning tells the denoising process what to move toward. It can come from t
 
 ## Conditioning Flow
 
-```text
-prompt / image / mask / adapter
-  -> encoded conditioning
-  -> denoising guidance
-  -> generated image
+```mermaid
+flowchart LR
+  A["Prompt, image, mask, or adapter"] --> B["Encoded conditioning"]
+  B --> C["Denoising guidance"]
+  C --> D["Generated image"]
 ```
+<!-- diagram id="conditioning-flow" caption="Conditioning flow in a diffusion workflow" -->
 
 ## Common Forms
 
@@ -27,4 +28,3 @@ prompt / image / mask / adapter
 ::: warning Conditioning Can Conflict
 If the prompt, image input, LoRA, and control map ask for different things, the model may compromise, ignore something, or produce artifacts.
 :::
-

@@ -95,6 +95,27 @@ Prefer diagrams, comparison images, and visual explanations when they improve un
 
 Visuals should clarify concepts, not act as decorative filler.
 
+### Diagram Authoring
+
+Use `vitepress-plugin-diagrams` for conceptual diagrams that are best expressed as text, especially Mermaid flowcharts for diffusion pipelines and concept flow.
+
+Diagram conventions:
+
+- Use fenced diagram blocks with diagram language identifiers, such as `mermaid` for simple flows.
+- Add a stable metadata comment after every diagram: `<!-- diagram id="stable-id" caption="Clear caption" -->`.
+- Use lowercase kebab-case IDs that remain stable when nearby text changes.
+- Keep diagram labels short enough to read on mobile.
+- Prefer Mermaid for simple concept and workflow diagrams; consider other Kroki-supported diagram types only when Mermaid is not expressive enough.
+- Keep file imports disabled unless there is a clear need for dedicated diagram source files.
+- Commit generated SVGs under `docs/public/diagrams/` so GitHub Pages builds do not depend on live diagram generation for unchanged diagrams.
+- Run `npm run docs:build` after adding or changing diagrams and visually check generated output when practical.
+
+Avoid:
+
+- decorative diagrams that repeat nearby prose without clarifying it
+- large diagrams that require horizontal scrolling
+- unstable diagram IDs such as `diagram-1` when a descriptive ID is possible
+
 ## Terminology Consistency
 
 Use terminology consistently across the project.
