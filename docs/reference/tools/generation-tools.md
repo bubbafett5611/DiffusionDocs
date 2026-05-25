@@ -2,7 +2,7 @@
 
 Diffusion tools range from local interfaces that run models on your own hardware to hosted websites that hide most of the pipeline. The right choice depends on whether you want control, convenience, privacy, model flexibility, or production workflow features.
 
-This page is a draft map of common options. It is not a ranking.
+This page is a practical map of common options. It is not a ranking.
 
 ::: tip Quick Take
 Start with a hosted generator if you want convenience. Use a local interface when you need custom models, LoRAs, privacy, repeatable settings, or advanced workflow control. Use a manager such as Stability Matrix when you want to try several local UIs without hand-maintaining every install.

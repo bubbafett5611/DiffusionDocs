@@ -165,7 +165,7 @@ Do not split every reference section into a separate isolated sidebar unless the
 
 ## Page Presentation Conventions
 
-Use VitePress features to make documentation easier to scan from the first draft.
+Use VitePress features to make documentation easier to scan from the initial version.
 
 Prefer:
 
@@ -221,7 +221,7 @@ If a topic fits multiple areas, put the main explanation where the reader would 
 - Do not remove or rewrite user-created content unnecessarily.
 - Avoid broad refactors while adding docs.
 - When adding a new category or page, consider whether navigation needs to change.
-- Prefer factual placeholders such as `TODO: verify tool-specific behavior` only when unavoidable; do not add lorem ipsum.
+- Avoid incomplete-content markers in public docs; if a claim cannot be verified, either scope it carefully or leave it out until it can be written accurately.
 
 ## Review Checklist
 

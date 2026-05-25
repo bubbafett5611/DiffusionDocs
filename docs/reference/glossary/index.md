@@ -2,8 +2,8 @@
 
 Concise definitions of common diffusion terms.
 
-::: info Glossary Style
-Definitions should be short, precise, and linked to deeper pages when a topic needs more explanation.
+::: info How To Use This Glossary
+Use this page for quick lookups, then follow links to deeper pages when a term affects workflow decisions or troubleshooting.
 :::
 
 ## Terms
@@ -11,6 +11,10 @@ Definitions should be short, precise, and linked to deeper pages when a topic ne
 ### Adapter
 
 A small add-on that modifies or steers a model without replacing the whole checkpoint. LoRAs are a common adapter type.
+
+### Attention
+
+A mechanism that lets parts of the model relate different pieces of information, such as image features and text-conditioning features. Attention behavior is one reason prompts can affect both global composition and local details.
 
 ### CFG
 
@@ -32,6 +36,10 @@ The repeated process of moving from noise toward a cleaner sample. See [Denoisin
 
 A learned token or set of tokens used through text conditioning, often tied to a specific model family or text encoder.
 
+### Guidance
+
+The process of pushing denoising toward conditioning. Classifier-free guidance is one common form. See [Classifier-Free Guidance](../theory/classifier-free-guidance.md).
+
 ### Image-To-Image
 
 A workflow that starts from an existing image instead of pure noise. See [Image-To-Image](../../guides/workflows/image-to-image.md).
@@ -51,6 +59,10 @@ Low-rank adaptation. A small adapter that modifies a base model's behavior. See 
 ### Negative Prompt
 
 Conditioning that tells some workflows what to avoid. See [Negative Prompts](../../guides/prompting/negative-prompts.md).
+
+### Text Encoder
+
+A model component that converts prompt text into conditioning representations. See [Text Encoders](../theory/text-encoders.md).
 
 ### Sampler
 

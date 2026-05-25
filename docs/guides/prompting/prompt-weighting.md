@@ -18,7 +18,38 @@ Weighting syntax is tool-specific. Parentheses, brackets, numeric weights, and e
 - one concept overpowering the composition
 - syntax copied from a different tool doing nothing
 
-::: warning Syntax Depends On The Tool
-Before writing a guide that uses exact weighting syntax, scope it to the UI or backend that supports that syntax.
-:::
+## When Weighting Helps
 
+Weighting can help when a concept is present but too weak. For example, a color, material, or small accessory may need emphasis if the model keeps dropping it.
+
+Before weighting, test clearer language:
+
+```text
+a red wool coat
+```
+
+instead of:
+
+```text
+coat, red, wool
+```
+
+If clearer wording works, weighting may not be needed.
+
+## When Weighting Hurts
+
+High weights can distort the image because they increase pressure on one part of the conditioning. This can make the model over-repeat textures, exaggerate anatomy, or sacrifice composition for the emphasized term.
+
+Use weighting like seasoning: small changes, tested against a fixed seed.
+
+## Debugging Weighting
+
+1. Remove all weights and generate a baseline.
+2. Add one weighted phrase.
+3. Compare several seeds, not just one.
+4. Reduce the weight if artifacts increase.
+5. Prefer workflow controls when the issue is layout, pose, or exact object count.
+
+::: warning Syntax Depends On The Tool
+Exact weighting syntax only applies when the UI or backend supports that syntax. Check the tool's prompt parser before copying examples between workflows.
+:::

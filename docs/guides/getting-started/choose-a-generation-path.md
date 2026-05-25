@@ -30,7 +30,7 @@ A single seed and prompt can make one tool look better by chance. Compare tools 
 Choose hosted generation if you want to:
 
 - learn prompt iteration
-- make quick drafts
+- make quick exploratory images
 - avoid installing dependencies
 - work from low-power hardware
 
