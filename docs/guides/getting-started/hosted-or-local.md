@@ -32,7 +32,7 @@ Good fits:
 
 - custom checkpoints and LoRAs
 - repeatable workflows
-- private drafts or client work
+- private exploratory images or client work
 - advanced inpainting, image-to-image, and control workflows
 
 Common limits:
@@ -45,4 +45,3 @@ Common limits:
 ::: info Hybrid Is Normal
 You do not have to pick one forever. It is common to use hosted tools for ideation and local tools for controlled workflows, LoRAs, private work, or batch generation.
 :::
-
