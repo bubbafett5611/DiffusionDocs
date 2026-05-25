@@ -34,11 +34,11 @@ A learned token or set of tokens used through text conditioning, often tied to a
 
 ### Image-To-Image
 
-A workflow that starts from an existing image instead of pure noise. See [Image-To-Image](../guides/workflows/image-to-image.md).
+A workflow that starts from an existing image instead of pure noise. See [Image-To-Image](../../guides/workflows/image-to-image.md).
 
 ### Inpainting
 
-A workflow that edits a masked region of an image. See [Inpainting](../guides/workflows/inpainting.md).
+A workflow that edits a masked region of an image. See [Inpainting](../../guides/workflows/inpainting.md).
 
 ### Latent Space
 
@@ -46,11 +46,11 @@ A compressed representation used by many diffusion workflows. See [Latent Space]
 
 ### LoRA
 
-Low-rank adaptation. A small adapter that modifies a base model's behavior. See [What Are LoRAs?](../guides/loras/what-are-loras.md).
+Low-rank adaptation. A small adapter that modifies a base model's behavior. See [What Are LoRAs?](../../guides/loras/what-are-loras.md).
 
 ### Negative Prompt
 
-Conditioning that tells some workflows what to avoid. See [Negative Prompts](../guides/prompting/negative-prompts.md).
+Conditioning that tells some workflows what to avoid. See [Negative Prompts](../../guides/prompting/negative-prompts.md).
 
 ### Sampler
 

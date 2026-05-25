@@ -15,7 +15,7 @@ Use hosted generation to learn prompting quickly. Use local generation when you 
 | Manager or launcher | Trying several local UIs and sharing model folders | Adds another layer to understand |
 | Developer library | Automation, apps, experiments, reproducible pipelines | Requires coding and more technical setup |
 
-For a broader comparison, see [Generation Tools](../../tools/generation-tools.md).
+For a broader comparison, see [Generation Tools](../../reference/tools/generation-tools.md).
 
 ## Start Simple
 
@@ -40,4 +40,3 @@ Choose local generation if you want to:
 - keep prompts and outputs on your machine
 - save exact settings and seeds
 - use inpainting, ControlNet-style inputs, regional prompting, or custom nodes
-

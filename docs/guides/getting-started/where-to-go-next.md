@@ -8,7 +8,7 @@ The next page to read depends on what you are trying to improve: tool choice, pr
 
 ## If You Need To Choose A Tool
 
-Go to [Generation Tools](../../tools/generation-tools.md) when you want to compare local interfaces, package managers, and hosted generation websites.
+Go to [Generation Tools](../../reference/tools/generation-tools.md) when you want to compare local interfaces, package managers, and hosted generation websites.
 
 Start with the kind of workflow you want, not the longest feature list. A simple hosted generator may be enough for prompt practice, while local tools make more sense when you need custom models, LoRAs, privacy, or repeatable workflows.
 
@@ -42,11 +42,11 @@ Go to LoRAs and model pages when you need a model or adapter to provide knowledg
 
 Useful topics to learn:
 
-- [checkpoint selection](../../models/checkpoint-formats.md)
+- [checkpoint selection](../../reference/models/checkpoint-formats.md)
 - [LoRA compatibility](../loras/compatibility.md)
 - [LoRA weights and trigger words](../loras/trigger-words-and-weights.md)
-- [embeddings](../../glossary/#embedding)
-- [model architecture compatibility](../../models/compatibility.md)
+- [embeddings](../../reference/glossary/#embedding)
+- [model architecture compatibility](../../reference/models/compatibility.md)
 
 ## If Images Look Wrong
 
@@ -54,18 +54,18 @@ Go to troubleshooting when you have a visible symptom.
 
 Common starting points:
 
-- [distorted hands, faces, or text](../../troubleshooting/bad-anatomy-or-text.md)
-- [muddy detail or oversharpening](../../troubleshooting/muddy-detail.md)
-- [prompt being ignored](../../troubleshooting/prompt-ignored.md)
-- [repeated objects](../../troubleshooting/repeated-objects.md)
-- [color or contrast problems](../../troubleshooting/color-problems.md)
-- [out-of-memory errors](../../troubleshooting/out-of-memory.md)
+- [distorted hands, faces, or text](../../reference/troubleshooting/bad-anatomy-or-text.md)
+- [muddy detail or oversharpening](../../reference/troubleshooting/muddy-detail.md)
+- [prompt being ignored](../../reference/troubleshooting/prompt-ignored.md)
+- [repeated objects](../../reference/troubleshooting/repeated-objects.md)
+- [color or contrast problems](../../reference/troubleshooting/color-problems.md)
+- [out-of-memory errors](../../reference/troubleshooting/out-of-memory.md)
 
 Troubleshooting works best when you can describe the symptom, the model, the workflow, and the settings that produced it.
 
 ## If You Want To Understand The System
 
-Go to theory when you want a deeper explanation of [denoising](../../theory/denoising.md), [latent diffusion](../../theory/latent-diffusion.md), [text encoders](../../theory/text-encoders.md), [guidance](../../theory/classifier-free-guidance.md), model architecture, or training.
+Go to theory when you want a deeper explanation of [denoising](../../reference/theory/denoising.md), [latent diffusion](../../reference/theory/latent-diffusion.md), [text encoders](../../reference/theory/text-encoders.md), [guidance](../../reference/theory/classifier-free-guidance.md), model architecture, or training.
 
 Theory is useful, but you do not need to read it all before making images. Return to it when practical problems make you curious about why a setting behaves the way it does.
 

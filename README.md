@@ -37,12 +37,12 @@ npm run docs:preview
 ## Site Structure
 
 - `docs/guides/`: reader-facing guides and workflows
-- `docs/concepts/`: core diffusion concepts
-- `docs/models/`: model families, formats, and compatibility notes
-- `docs/tools/`: generation tools and tool-specific notes
-- `docs/troubleshooting/`: symptoms, likely causes, and fixes
-- `docs/theory/`: deeper technical explanations
-- `docs/glossary/`: concise definitions
+- `docs/reference/concepts/`: core diffusion concepts
+- `docs/reference/models/`: model families, formats, and compatibility notes
+- `docs/reference/tools/`: generation tools and tool-specific notes
+- `docs/reference/troubleshooting/`: symptoms, likely causes, and fixes
+- `docs/reference/theory/`: deeper technical explanations
+- `docs/reference/glossary/`: concise definitions
 
 ## Contributing
 
