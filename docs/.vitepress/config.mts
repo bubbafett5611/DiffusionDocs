@@ -9,28 +9,42 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started/introduction' },
-      { text: 'Tools', link: '/tools/generation-tools' }
-    ],
-
-    sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Guides',
         items: [
-          { text: 'Introduction', link: '/getting-started/introduction' },
-          { text: 'What Is Diffusion?', link: '/getting-started/what-is-diffusion' },
-          { text: 'Your First Workflow', link: '/getting-started/first-workflow' },
-          { text: 'Common Terms', link: '/getting-started/common-terms' },
-          { text: 'Where To Go Next', link: '/getting-started/where-to-go-next' }
+          { text: 'Getting Started', link: '/getting-started/introduction' }
         ]
       },
       {
-        text: 'Tools',
+        text: 'Reference',
         items: [
           { text: 'Generation Tools', link: '/tools/generation-tools' }
         ]
       }
     ],
+
+    sidebar: {
+      '/getting-started/': [
+        {
+          text: 'Guides',
+          items: [
+            { text: 'Introduction', link: '/getting-started/introduction' },
+            { text: 'What Is Diffusion?', link: '/getting-started/what-is-diffusion' },
+            { text: 'Your First Workflow', link: '/getting-started/first-workflow' },
+            { text: 'Common Terms', link: '/getting-started/common-terms' },
+            { text: 'Where To Go Next', link: '/getting-started/where-to-go-next' }
+          ]
+        }
+      ],
+      '/tools/': [
+        {
+          text: 'Reference',
+          items: [
+            { text: 'Generation Tools', link: '/tools/generation-tools' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bubbafett5611/DiffusionDocs' }
