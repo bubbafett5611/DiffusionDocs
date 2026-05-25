@@ -51,7 +51,9 @@ Read these pages in order if you are starting from scratch:
 
 1. [What Is Diffusion?](./what-is-diffusion.md)
 2. [Your First Workflow](./first-workflow.md)
-3. [Common Terms](./common-terms.md)
-4. [Where To Go Next](./where-to-go-next.md)
+3. [Choose A Generation Path](./choose-a-generation-path.md)
+4. [Hosted Or Local?](./hosted-or-local.md)
+5. [Common Terms](./common-terms.md)
+6. [Where To Go Next](./where-to-go-next.md)
 
 If you already use a diffusion tool, skim the first two pages and focus on the terminology. Many confusing problems come from mixing up related concepts, such as samplers and schedulers, or LoRAs and embeddings.

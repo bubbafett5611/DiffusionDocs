@@ -18,10 +18,10 @@ Go to prompting when you want to improve subject control, composition, style con
 
 Useful topics to learn:
 
-- prompt structure
-- prompt weighting
-- negative prompts
-- model-specific prompting habits
+- [prompt structure](../prompting/prompt-structure.md)
+- [prompt weighting](../prompting/prompt-weighting.md)
+- [negative prompts](../prompting/negative-prompts.md)
+- [model-specific prompting habits](../prompting/model-specific-behavior.md)
 - how prompts interact with LoRAs and other conditioning
 
 ## If You Want Better Control
@@ -30,11 +30,10 @@ Go to workflows when text prompting alone is not enough.
 
 Useful topics to learn:
 
-- image-to-image
-- inpainting
-- outpainting
+- [image-to-image](../workflows/image-to-image.md)
+- [inpainting](../workflows/inpainting.md)
+- [upscaling and refinement](../workflows/upscaling-refinement.md)
 - pose, depth, edge, and segmentation guidance
-- regional prompting
 - multi-stage refinement
 
 ## If You Want A Specific Style Or Subject
@@ -43,11 +42,11 @@ Go to LoRAs and model pages when you need a model or adapter to provide knowledg
 
 Useful topics to learn:
 
-- checkpoint selection
-- LoRA compatibility
-- LoRA weights and trigger words
-- embeddings
-- model architecture compatibility
+- [checkpoint selection](../../models/checkpoint-formats.md)
+- [LoRA compatibility](../loras/compatibility.md)
+- [LoRA weights and trigger words](../loras/trigger-words-and-weights.md)
+- [embeddings](../../glossary/#embedding)
+- [model architecture compatibility](../../models/compatibility.md)
 
 ## If Images Look Wrong
 
@@ -55,18 +54,18 @@ Go to troubleshooting when you have a visible symptom.
 
 Common starting points:
 
-- distorted hands, faces, or text
-- muddy detail or oversharpening
-- prompt being ignored
-- repeated objects
-- color or contrast problems
-- out-of-memory errors
+- [distorted hands, faces, or text](../../troubleshooting/bad-anatomy-or-text.md)
+- [muddy detail or oversharpening](../../troubleshooting/muddy-detail.md)
+- [prompt being ignored](../../troubleshooting/prompt-ignored.md)
+- [repeated objects](../../troubleshooting/repeated-objects.md)
+- [color or contrast problems](../../troubleshooting/color-problems.md)
+- [out-of-memory errors](../../troubleshooting/out-of-memory.md)
 
 Troubleshooting works best when you can describe the symptom, the model, the workflow, and the settings that produced it.
 
 ## If You Want To Understand The System
 
-Go to theory when you want a deeper explanation of denoising, latent space, text encoders, guidance, model architecture, or training.
+Go to theory when you want a deeper explanation of [denoising](../../theory/denoising.md), [latent diffusion](../../theory/latent-diffusion.md), [text encoders](../../theory/text-encoders.md), [guidance](../../theory/classifier-free-guidance.md), model architecture, or training.
 
 Theory is useful, but you do not need to read it all before making images. Return to it when practical problems make you curious about why a setting behaves the way it does.
 
