@@ -5,6 +5,9 @@ hero:
   name: "Diffusion Docs"
   text: "Practical Diffusion Reference"
   tagline: "Technically grounded workflows, troubleshooting, and reference material for modern diffusion tools."
+  image:
+    src: /images/Logo.png
+    alt: VitePress
   actions:
     - theme: brand
       text: Getting Started

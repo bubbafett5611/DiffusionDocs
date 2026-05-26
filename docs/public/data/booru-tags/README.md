@@ -1,3 +1,8 @@
+---
+search: false
+editlink: false
+---
+
 # Booru Tag Data
 
 This directory contains pinned CSV snapshots from the
