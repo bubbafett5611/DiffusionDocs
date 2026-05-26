@@ -138,6 +138,10 @@ export default defineConfig({
     plugins: [vitePlugin()]
   },
   themeConfig: {
+    logo: 'public/images/logo.png',
+        search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -172,5 +176,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bubbafett5611/DiffusionDocs' }
     ]
-  }
+  },
+  head: [['link', { rel: 'icon', href: 'images/favicon/favicon.ico' }]]
 })
